@@ -128,6 +128,10 @@ public class UserInterface extends JFrame implements ActionListener{
 		if(e.getSource()==butEmp) {
 			EmployeeUI me = new EmployeeUI();
 		}
+		if(e.getSource()==butUser) {
+			ClientUI you = new ClientUI();
+		}
+		
 	}
 
     

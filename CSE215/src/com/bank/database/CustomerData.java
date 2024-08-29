@@ -3,9 +3,9 @@ import 	java.util.ArrayList;
 import com.bank.models.CustomerClass;
 
 public class CustomerData extends ArrayList<CustomerClass> {
-
-	public CustomerData(String x, long i,String a, long p, String e, String P) {
-		this.add(new CustomerClass(x, i, a, p, e, P));
+	
+	public CustomerData(String n, long i,String a, long p, String e, String P) {
+		this.add(new CustomerClass(n, i, a, p, e, P));
 	}
 	
 	public void print() {
@@ -13,5 +13,10 @@ public class CustomerData extends ArrayList<CustomerClass> {
 			System.out.println(customers);
 		}
 	}
+	
+	
+	public void infoCheck( String x) {
+		
+		}
 
 }
