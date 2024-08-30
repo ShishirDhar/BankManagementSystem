@@ -14,12 +14,12 @@ public class EmployeeClass {
 	//this.password = password;
 //}
 
-public void addCustomer(String x, long i,String a, long p, String e, String P) {
-	CustomerData custom = new CustomerData(x,i,a,p,e,P);
+//public void addCustomer(String x, long i,String a, long p, String e, String P) {
+	//CustomerData custom = new CustomerData(x,i,a,p,e,P);
 	//CustomerData(x,i,a,p,e,P);
 		
 	
-}
+//}
 
 private void deleteCustomer() {
 	// TODO Auto-generated method stub
