@@ -6,7 +6,7 @@ import javax.swing.*;
 
 public class ClientUI {
 	
-	CustomerData custom = new CustomerData();
+	
 	
 	public ClientUI() {
 		JPanel panel = new JPanel();
@@ -26,7 +26,7 @@ public class ClientUI {
 		if (output == JOptionPane.OK_OPTION) {
 	            String input1 = fieldName.getText();
 	            String input2 = fieldPass.getText();
-	            if(custom.infoCheck(input1) && custom.passCheck(input2)) {
+	            if(CustomerData.infoCheck(input1)) {
 	            	JOptionPane.showMessageDialog(null, "Your Are In!!", "Success", JOptionPane.INFORMATION_MESSAGE);
 	            }else {
 	            	JOptionPane.showMessageDialog(null, "Invalid Username or Password", "Error", JOptionPane.WARNING_MESSAGE);
