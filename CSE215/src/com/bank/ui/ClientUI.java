@@ -26,7 +26,7 @@ public class ClientUI {
 		if (output == JOptionPane.OK_OPTION) {
 	            String input1 = fieldName.getText();
 	            String input2 = fieldPass.getText();
-	            if(CustomerData.infoCheck(input1)) {
+	            if(CustomerData.infoCheck(input1, input2)) {
 	            	JOptionPane.showMessageDialog(null, "Your Are In!!", "Success", JOptionPane.INFORMATION_MESSAGE);
 	            }else {
 	            	JOptionPane.showMessageDialog(null, "Invalid Username or Password", "Error", JOptionPane.WARNING_MESSAGE);

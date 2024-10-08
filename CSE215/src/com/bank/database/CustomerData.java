@@ -23,9 +23,9 @@ public  class CustomerData extends ArrayList<CustomerClass> {
 	}
 	
 	
-	public static boolean infoCheck(String x) { // Checking Arraylist for name and password
+	public static boolean infoCheck(String x, String P) { // Checking Arraylist for name and password
 		for (CustomerClass n: dataSet) {
-			if(n.getName().equals(x)) {
+			if(n.getName().equals(x) && n.getPassword().equals(P)) {
 				return true;
 				
 			}
@@ -33,8 +33,8 @@ public  class CustomerData extends ArrayList<CustomerClass> {
 		return false;
 		
 		}
-	public boolean passCheck(String P) {
-		for (CustomerClass s: this) {
+	public static boolean passCheck(String P) {
+		for (CustomerClass s: dataSet) {
 			if(s.getPassword().equals(P)) {
 				return true;
 			}
